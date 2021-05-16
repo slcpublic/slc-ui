@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--自定义变体表单样式 start-->
     <!--表单标题上的颜色-->
     <attr name="uiFromInputLabelOnColor" format="color" />
     <!--表单标题上的字体大小-->
     <attr name="uiFromInputLabelTextSize" format="dimension" />
     <!--表单输入框上的颜色-->
-    <attr name="uiFromInputEditOnColor" format="dimension" />
+    <attr name="uiFromInputEditOnColor" format="color" />
     <!--表单标题上的输入框字体大小-->
     <attr name="uiFromInputEditTextSize" format="dimension" />
+    <!--自定义变体表单样式 end-->
 
 </resources>

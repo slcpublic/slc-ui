@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorBlue1">#0091ea</color>
-    <color name="colorRed1">#e83d43</color>
-    <color name="colorGreen1">#15b76c</color>
-    <color name="colorBlue2">#4663c7</color>
-    <color name="colorOrange1">#e95c31</color>
-    <color name="colorGreen2">#0c967c</color>
-    <color name="colorPink1">#f11346</color>
-    <color name="colorOrange2">#ff9e01</color>
-    <color name="colorPurple1">#6e6ed2</color>
+    <color name="ui_color_blue1">#0091ea</color>
+    <color name="ui_color_blue2">#4663c7</color>
+    <color name="ui_color_red1">#e83d43</color>
+    <color name="ui_color_orange1">#e95c31</color>
+    <color name="ui_color_orange2">#ff9e01</color>
+    <color name="ui_color_green1">#15b76c</color>
+    <color name="ui_color_green2">#0c967c</color>
+    <color name="ui_color_pink1">#f11346</color>
+    <color name="ui_color_purple1">#6e6ed2</color>
 </resources>

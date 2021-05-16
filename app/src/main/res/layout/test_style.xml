@@ -9,9 +9,9 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginHorizontal="@dimen/ui_style_dp_16"
-        android:background="@color/colorBlue2" />
+        android:background="@color/ui_color_blue2" />
 
-    <LinearLayout style="@style/UiSimpleFormSingleLayoutStyle">
+    <LinearLayout style="@style/UiSimpleFormLayoutStyle.H">
 
         <ImageView
             style="@style/UiSimpleItemIconPrefixStyle"
@@ -27,7 +27,7 @@
             android:src="@drawable/ic_baseline_dashboard_24" />
     </LinearLayout>
 
-    <LinearLayout style="@style/UiSimpleFormSingleLayoutStyle">
+    <LinearLayout style="@style/UiSimpleFormLayoutStyle.H">
 
         <ImageView
             style="@style/UiSimpleItemIconPrefixStyle"
@@ -40,10 +40,10 @@
 
         <ImageView
             style="@style/UiSimpleItemIconSuffixStyle"
-            android:src="@drawable/ui_ic_arrow_right" />
+            android:src="@drawable/ui_ic_more" />
     </LinearLayout>
 
-    <LinearLayout style="@style/UiSimpleFormSingleLayoutStyle">
+    <LinearLayout style="@style/UiSimpleFormLayoutStyle.H">
 
         <Space
             android:layout_width="0dp"
@@ -52,7 +52,7 @@
 
         <ImageView
             android:id="@+id/more"
-            style="@style/UiSimpleItemIconSuffixActionStyle"
+            style="@style/UiSimpleItemIconSuffixStyle.Action"
             android:src="@drawable/ic_baseline_dashboard_24" />
     </LinearLayout>
 
@@ -65,10 +65,17 @@
         android:background="@drawable/ui_bg_action_color_surface" />
 
     <View
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="?colorSurface" />
+        android:id="@+id/v_radius"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/ui_color_green1"
+        android:background="@drawable/ui_bg_action_radius_24" />
 
+    <View
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/ui_color_green1"
+        android:background="@drawable/ui_bg_round_color_surface" />
     <Button
         android:id="@+id/button"
         style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
@@ -76,25 +83,27 @@
         android:layout_height="wrap_content"
         android:text="@string/app_name" />
 
-    <LinearLayout style="@style/UiVariantsFormSingleLayoutStyle">
+    <LinearLayout style="@style/UiVariantsFormLayoutHStyle">
 
         <TextView
-            style="@style/UiVariantsFormLabelTextStyle"
+            style="@style/UiVariantsFormLabelTextStyle.H"
             android:text="姓名" />
 
         <EditText
-            style="@style/UiVariantsFormEditTextSingleStyle"
+            style="@style/UiVariantsFormEditTextStyle.H"
             android:hint="请输入姓名" />
     </LinearLayout>
 
-    <LinearLayout style="@style/UiVariantsFormSingleLayoutStyle">
+    <LinearLayout
+        style="@style/UiVariantsFormLayoutHStyle"
+        android:layout_marginTop="1dp">
 
         <TextView
-            style="@style/UiVariantsFormLabelTextStyle"
+            style="@style/UiVariantsFormLabelTextStyle.H"
             android:text="性别" />
 
         <TextView
-            style="@style/UiVariantsFormEditTextSingleStyle"
+            style="@style/UiVariantsFormEditTextStyle.H"
             android:layout_marginEnd="@dimen/ui_style_dp_8"
             android:hint="请选择" />
 
@@ -103,14 +112,18 @@
             android:src="@drawable/ic_baseline_dashboard_24" />
     </LinearLayout>
 
-    <LinearLayout style="@style/UiVariantsFormSingleLayoutStyle">
+    <LinearLayout
+        android:id="@+id/ll_sex"
+        style="@style/UiVariantsFormLayoutHStyle"
+        android:background="@drawable/ui_bg_action_color_secondary_24"
+        android:layout_marginTop="1dp">
 
         <TextView
-            style="@style/UiVariantsFormLabelTextStyle"
+            style="@style/UiVariantsFormLabelTextStyle.H"
             android:text="性别" />
 
         <TextView
-            style="@style/UiVariantsFormEditTextSingleStyle"
+            style="@style/UiVariantsFormEditTextStyle.H"
             android:layout_marginEnd="@dimen/ui_style_dp_8"
             android:hint="请选择" />
 
@@ -118,34 +131,36 @@
     </LinearLayout>
 
     <LinearLayout
-        style="@style/UiVariantsFormMultipleLayoutStyle"
+        style="@style/UiVariantsFormLayoutVStyle"
         android:layout_marginTop="1dp">
 
         <TextView
-            style="@style/UiVariantsFormLabelTextStyle"
+            style="@style/UiVariantsFormLabelTextStyle.V"
             android:text="内容" />
 
         <EditText
-            style="@style/UiVariantsFormEditTextMultipleStyle"
+            style="@style/UiVariantsFormEditTextStyle.V"
             android:hint="请输入内容" />
     </LinearLayout>
 
     <LinearLayout
-        style="@style/UiVariantsFormMultipleLayoutStyle"
+        style="@style/UiVariantsFormLayoutVStyle"
         android:layout_marginTop="1dp">
 
         <TextView
-            style="@style/UiVariantsFormLabelTextStyle"
+            style="@style/UiVariantsFormLabelTextStyle.V"
             android:text="附件信息" />
 
-        <LinearLayout style="@style/UiSimpleFormSingleLayoutStyle">
+        <LinearLayout
+            style="@style/UiSimpleFormLayoutStyle.H"
+            android:paddingVertical="@dimen/ui_style_dp_8">
 
             <ImageView
                 style="@style/UiVariantsFormIconPrefixStyle"
                 android:src="@drawable/ic_baseline_dashboard_24" />
 
             <TextView
-                style="@style/UiVariantsFormLabelTextStyle"
+                style="@style/UiVariantsFormLabelTextStyle.H"
                 android:text="点击添加附件" />
         </LinearLayout>
 

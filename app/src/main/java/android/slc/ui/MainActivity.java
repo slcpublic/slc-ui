@@ -31,5 +31,17 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+        findViewById(R.id.ll_sex).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+        findViewById(R.id.v_radius).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
 }

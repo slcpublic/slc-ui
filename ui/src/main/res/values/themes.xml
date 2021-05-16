@@ -1,13 +1,18 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
     <style name="UiAppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar.Bridge">
-        .
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="colorPrimaryDark">?attr/colorPrimaryVariant</item>
         <item name="colorAccent">?attr/colorSecondary</item>
+        <!--变体表单样式-->
+        <item name="uiFromInputLabelOnColor">?android:attr/textColorPrimary</item>
+        <item name="uiFromInputLabelTextSize">16sp</item>
+        <item name="uiFromInputEditOnColor">?android:attr/textColorPrimary</item>
+        <item name="uiFromInputEditTextSize">16sp</item>
         <!-- Customize your theme here. -->
     </style>
+
     <!---->
     <style name="UiDialogActivityTheme" parent="@style/Theme.MaterialComponents.Light.Dialog.Bridge">
         <item name="android:windowNoTitle">true</item>
@@ -55,11 +60,11 @@
         <item name="android:gravity">center_vertical</item>
     </style>
 
-    <style name="UiSimpleItemParentLayoutHorizontalStyle" parent="UiSimpleItemParentLayoutStyle">
+    <style name="UiSimpleItemParentLayoutStyle.H">
         <item name="android:orientation">horizontal</item>
     </style>
 
-    <style name="UiSimpleItemParentLayoutVerticalStyle" parent="UiSimpleItemParentLayoutStyle">
+    <style name="UiSimpleItemParentLayoutStyle.V">
         <item name="android:orientation">vertical</item>
     </style>
     <!--数据列表item标题-->
@@ -102,7 +107,7 @@
         <item name="android:layout_marginStart">@dimen/ui_style_dp_16</item>
     </style>
     <!--数据列表item前缀Action icon-->
-    <style name="UiSimpleItemIconPrefixActionStyle" parent="UiSimpleItemIconPrefixStyle">
+    <style name="UiSimpleItemIconPrefixStyle.Action">
         <item name="android:layout_width">40dp</item>
         <item name="android:layout_height">40dp</item>
         <item name="android:padding">8dp</item>
@@ -117,7 +122,7 @@
         <item name="android:layout_marginEnd">@dimen/ui_style_dp_16</item>
     </style>
     <!--数据列表item后缀Action icon-->
-    <style name="UiSimpleItemIconSuffixActionStyle" parent="UiSimpleItemIconSuffixStyle">
+    <style name="UiSimpleItemIconSuffixStyle.Action">
         <item name="android:layout_width">40dp</item>
         <item name="android:layout_height">40dp</item>
         <item name="android:padding">8dp</item>
@@ -126,11 +131,11 @@
     </style>
     <!--更多图标 因为此按钮左右边距较大 所以用起来可能要调整-->
     <style name="UiSimpleItemIconMoreStyle" parent="UiSimpleItemIconSuffixStyle">
-        <item name="srcCompat">@drawable/ui_ic_arrow_right</item>
+        <item name="srcCompat">@drawable/ui_ic_more</item>
     </style>
     <!--更多按钮 因为此按钮左右边距较大 所以用起来可能要调整-->
-    <style name="UiSimpleItemIconMoreActionStyle" parent="UiSimpleItemIconSuffixActionStyle">
-        <item name="srcCompat">@drawable/ui_ic_arrow_right</item>
+    <style name="UiSimpleItemIconMoreActionStyle" parent="UiSimpleItemIconSuffixStyle.Action">
+        <item name="srcCompat">@drawable/ui_ic_more</item>
     </style>
 
     <!--提交/保存按钮-->
@@ -171,34 +176,35 @@
         <item name="android:layout_marginBottom">2dp</item>
         <item name="android:textColor">?android:textColorSecondary</item>
     </style>
-
-    <!--通用单行输入布局样式-->
-    <style name="UiSimpleFormSingleLayoutStyle">
+    <!--通用输入布局样式-->
+    <style name="UiSimpleFormLayoutStyle">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:background">@drawable/ui_bg_action_color_surface</item>
         <item name="android:gravity">center_vertical</item>
+        <!--<item name="android:minHeight">40dp</item>-->
+    </style>
+    <!--通用单行输入布局样式-->
+    <style name="UiSimpleFormLayoutStyle.H">
+        <item name="android:background">@drawable/ui_bg_action_color_surface</item>
         <item name="android:orientation">horizontal</item>
+        <!--<item name="android:minHeight">40dp</item>-->
     </style>
     <!--通用多行输入布局样式-->
-    <style name="UiSimpleFormMultipleLayoutStyle">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
+    <style name="UiSimpleFormLayoutStyle.V">
         <item name="android:background">@drawable/ui_bg_color_surface</item>
-        <item name="android:gravity">center_vertical</item>
         <item name="android:orientation">vertical</item>
     </style>
 
     <!--自定义表单界面风格 start-->
     <!--简单单行表单输入布局样式-->
-    <style name="UiVariantsFormSingleLayoutStyle" parent="UiSimpleFormSingleLayoutStyle">
-        <item name="android:paddingTop">@dimen/ui_style_dp_12</item>
-        <item name="android:paddingBottom">@dimen/ui_style_dp_12</item>
+    <style name="UiVariantsFormLayoutHStyle" parent="UiSimpleFormLayoutStyle.H">
+        <!--<item name="android:paddingTop">@dimen/ui_style_dp_12</item>
+        <item name="android:paddingBottom">@dimen/ui_style_dp_12</item>-->
     </style>
     <!--简单多表单行输入布局样式-->
-    <style name="UiVariantsFormMultipleLayoutStyle" parent="UiSimpleFormMultipleLayoutStyle">
-        <item name="android:paddingTop">@dimen/ui_style_dp_12</item>
-        <item name="android:paddingBottom">@dimen/ui_style_dp_12</item>
+    <style name="UiVariantsFormLayoutVStyle" parent="UiSimpleFormLayoutStyle.V">
+        <!--<item name="android:paddingTop">@dimen/ui_style_dp_12</item>
+        <item name="android:paddingBottom">@dimen/ui_style_dp_12</item>-->
     </style>
     <!--简单表单标题布局样式-->
     <style name="UiVariantsFormLabelTextStyle">
@@ -207,56 +213,73 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:singleLine">true</item>
         <item name="android:ellipsize">end</item>
-        <item name="android:textColor">?android:textColorPrimary</item>
-        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">?attr/uiFromInputLabelOnColor</item>
+        <item name="android:textSize">?attr/uiFromInputLabelTextSize</item>
+    </style>
+
+    <style name="UiVariantsFormLabelTextStyle.H" parent="UiVariantsFormLabelTextStyle">
+        <!---->
+    </style>
+
+    <style name="UiVariantsFormLabelTextStyle.V" parent="UiVariantsFormLabelTextStyle">
+        <item name="android:layout_marginTop">12dp</item>
     </style>
     <!--简单表单标题后面强调文字-->
-    <style name="UiVariantsFormEmphasisStyle" parent="UiVariantsFormLabelTextStyle">
+    <style name="UiVariantsFormLabelTextStyle.Emphasis" parent="UiVariantsFormLabelTextStyle">
         <item name="android:layout_marginStart">0dp</item>
-        <item name="android:textColor">@color/colorRed1</item>
+        <item name="android:textColor">@color/ui_color_red1</item>
         <item name="android:text">*</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="UiVariantsFormEditTextStyle">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:textColor">?attr/uiFromInputEditOnColor</item>
+        <item name="android:textSize">?attr/uiFromInputEditTextSize</item>
     </style>
     <!--简单表单单行输入布局样式-->
-    <style name="UiVariantsFormEditTextSingleStyle" parent="UiVariantsFormLabelTextStyle">
-        <item name="android:background">@android:color/transparent</item>
+    <style name="UiVariantsFormEditTextStyle.H">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_weight">1</item>
-        <item name="android:gravity">end</item>
-        <item name="android:layout_marginStart">16dp</item>
-        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:gravity">end|center_vertical</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
     </style>
     <!--简单表单多行输入布局样式-->
-    <style name="UiVariantsFormEditTextMultipleStyle" parent="UiVariantsFormLabelTextStyle">
+    <style name="UiVariantsFormEditTextStyle.V">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:background">@android:color/transparent</item>
-        <item name="android:layout_marginStart">16dp</item>
         <item name="android:singleLine">false</item>
-        <item name="android:layout_marginEnd">16dp</item>
-        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
     </style>
     <!--简单表单item前缀icon-->
     <style name="UiVariantsFormIconPrefixStyle" parent="UiSimpleItemIconPrefixStyle">
-
+        <!---->
     </style>
     <!--简单表单item前缀Action icon-->
-    <style name="UiVariantsFormIconPrefixActionStyle" parent="UiSimpleItemIconPrefixActionStyle">
-        <!--TODO-->
+    <style name="UiVariantsFormIconPrefixActionStyle" parent="UiSimpleItemIconPrefixStyle.Action">
+        <!---->
     </style>
     <!--简单表单item后缀icon-->
     <style name="UiVariantsFormIconSuffixStyle" parent="UiSimpleItemIconSuffixStyle">
-        <!--TODO-->
+        <!---->
     </style>
     <!--简单表单item后缀Action icon-->
-    <style name="UiVariantsFormIconSuffixActionStyle" parent="UiSimpleItemIconSuffixActionStyle">
-        <!--TODO-->
+    <style name="UiVariantsFormIconSuffixActionStyle" parent="UiSimpleItemIconSuffixStyle.Action">
+        <!---->
     </style>
     <!--简单表单 更多图标 因为此按钮左右边距较大 所以用起来可能要调整-->
     <style name="UiVariantsFormMoreStyle" parent="UiSimpleItemIconMoreStyle">
-        <!--TODO-->
+        <!---->
     </style>
     <!--简单表单 更多按钮 因为此按钮左右边距较大 所以用起来可能要调整-->
     <style name="UiVariantsFormMoreActionStyle" parent="UiSimpleItemIconMoreActionStyle">
-        <!--TODO-->
+        <!---->
     </style>
 
 </resources>
