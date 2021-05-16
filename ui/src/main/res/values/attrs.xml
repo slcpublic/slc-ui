@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--表单标题上的颜色-->
+    <attr name="uiFromInputLabelOnColor" format="color" />
+    <!--表单标题上的字体大小-->
+    <attr name="uiFromInputLabelTextSize" format="dimension" />
+    <!--表单输入框上的颜色-->
+    <attr name="uiFromInputEditOnColor" format="dimension" />
+    <!--表单标题上的输入框字体大小-->
+    <attr name="uiFromInputEditTextSize" format="dimension" />
+
+</resources>
