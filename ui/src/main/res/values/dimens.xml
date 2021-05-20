@@ -6,6 +6,7 @@
     <dimen name="ui_prediction_system_ui_def_size">24dp</dimen>
 
     <dimen name="ui_style_dp_32">32dp</dimen>
+    <dimen name="ui_style_dp_24">24dp</dimen>
     <dimen name="ui_style_dp_16">16dp</dimen>
     <dimen name="ui_style_dp_14">14dp</dimen>
     <dimen name="ui_style_dp_12">12dp</dimen>
