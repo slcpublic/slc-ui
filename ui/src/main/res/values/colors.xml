@@ -9,4 +9,10 @@
     <color name="ui_color_green2">#0c967c</color>
     <color name="ui_color_pink1">#f11346</color>
     <color name="ui_color_purple1">#6e6ed2</color>
+    <!--笔记
+    默认暗黑水波纹颜色
+    <color name="ripple_material_dark">#33ffffff</color>
+    默认高亮水波纹颜色
+    <color name="ripple_material_light">#1f000000</color>
+    -->
 </resources>
