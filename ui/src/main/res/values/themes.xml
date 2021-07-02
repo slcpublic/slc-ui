@@ -263,13 +263,15 @@
         <item name="android:textColor">?android:textColorSecondary</item>
         <item name="android:textSize">14sp</item>
     </style>
-    <!--数据列表item日期-->
-    <style name="UiSimpleItemDateStyle">
+    <!--数据列表item结束样式-->
+    <style name="UiSimpleItemEndStyle">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">?android:textColorSecondary</item>
         <item name="android:textSize">12sp</item>
     </style>
+    <!--数据列表item日期-->
+    <style name="UiSimpleItemDateStyle" parent="UiSimpleItemEndStyle" />
     <!--数据列表item用户-->
     <style name="UiSimpleItemBottomStyle">
         <item name="android:layout_width">wrap_content</item>
