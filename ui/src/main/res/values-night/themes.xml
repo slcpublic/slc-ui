@@ -1,0 +1,7 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="UiAppTheme.DayNight">
+        <item name="android:background">@color/uiColorBackground</item>
+        <item name="colorSurface">@color/uiColorSurface</item>
+    </style>
+</resources>

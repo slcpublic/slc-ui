@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--笔记
+    默认暗黑水波纹颜色
+    <color name="ripple_material_dark">#33ffffff</color>
+    默认高亮水波纹颜色
+    <color name="ripple_material_light">#1f000000</color>
+    -->
+    <color name="uiColorSurface">#2e2e2e</color>
+    <color name="uiColorBackground">#212121</color>
+    <color name="uiDivider">#3d3d3d</color>
+</resources>
