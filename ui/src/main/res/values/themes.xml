@@ -14,7 +14,7 @@
     </style>
 
     <style name="UiAppTheme.DayNight">
-        <item name="android:background">@color/uiColorBackground</item>
+        <item name="android:colorBackground">@color/uiColorBackground</item>
     </style>
     <!--app dialogActivity主题-->
     <style name="UiDialogActivityTheme" parent="@style/Theme.MaterialComponents.DayNight.Dialog.Bridge">
