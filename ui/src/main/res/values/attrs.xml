@@ -11,5 +11,5 @@
     <attr name="uiFromInputEditTextSize" format="dimension" />
     <!--自定义变体表单样式 end-->
 
-    <attr name="uiDivider" format="color" />
+    <attr name="uiDividerColor" format="color" />
 </resources>

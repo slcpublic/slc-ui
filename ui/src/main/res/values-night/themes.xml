@@ -4,4 +4,9 @@
         <item name="android:colorBackground">@color/uiColorBackground</item>
         <item name="colorSurface">@color/uiColorSurface</item>
     </style>
+
+    <style name="UiDialogActivityTheme.DayNight">
+        <item name="android:colorBackground">@color/uiColorBackground</item>
+        <item name="colorSurface">@color/uiColorSurface</item>
+    </style>
 </resources>

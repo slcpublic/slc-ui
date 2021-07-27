@@ -10,19 +10,33 @@
         <item name="uiFromInputLabelTextSize">16sp</item>
         <item name="uiFromInputEditOnColor">?android:attr/textColorPrimary</item>
         <item name="uiFromInputEditTextSize">16sp</item>
-        <item name="uiDivider">@color/uiDivider</item>
+        <item name="uiDividerColor">@color/uiDivider</item>
         <!-- Customize your theme here. -->
     </style>
 
     <style name="UiAppTheme.DayNight">
         <item name="android:colorBackground">@color/uiColorBackground</item>
     </style>
+
     <!--app dialogActivity主题-->
     <style name="UiDialogActivityTheme" parent="@style/Theme.MaterialComponents.DayNight.Dialog.Bridge">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimaryDark">?attr/colorPrimaryVariant</item>
+        <item name="colorAccent">?attr/colorSecondary</item>
+        <!--变体表单样式-->
+        <item name="uiFromInputLabelOnColor">?android:attr/textColorPrimary</item>
+        <item name="uiFromInputLabelTextSize">16sp</item>
+        <item name="uiFromInputEditOnColor">?android:attr/textColorPrimary</item>
+        <item name="uiFromInputEditTextSize">16sp</item>
+        <item name="uiDividerColor">@color/uiDivider</item>
     </style>
 
+    <style name="UiDialogActivityTheme.DayNight">
+        <item name="android:colorBackground">@color/uiColorBackground</item>
+    </style>
     <!--布局 start-->
 
     <!--宽和高都是wrap_content-->
