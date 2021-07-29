@@ -84,131 +84,68 @@
         <item name="android:layout_weight">1</item>
     </style>
     <!--水平线性布局宽高wrap_content-->
-    <style name="LinearLayoutHorizontalWW" parent="WWLayout">
-        <item name="android:orientation">horizontal</item>
-    </style>
-
     <style name="WWLayout.LinearLayoutHorizontal">
         <item name="android:orientation">horizontal</item>
     </style>
     <!--垂直线性布局宽高wrap_content-->
-    <style name="LinearLayoutVerticalWW" parent="WWLayout">
-        <item name="android:orientation">vertical</item>
-    </style>
-
     <style name="WWLayout.LinearLayoutVertical">
         <item name="android:orientation">vertical</item>
     </style>
     <!--水平线性布局宽高match_parent-->
-    <style name="LinearLayoutHorizontalMM" parent="MMLayout">
-        <item name="android:orientation">horizontal</item>
-    </style>
-
     <style name="MMLayout.LinearLayoutHorizontal">
         <item name="android:orientation">horizontal</item>
     </style>
     <!--垂直线性布局宽高match_parent-->
-    <style name="LinearLayoutVerticalMM" parent="MMLayout">
-        <item name="android:orientation">vertical</item>
-    </style>
-
     <style name="MMLayout.LinearLayoutVertical">
         <item name="android:orientation">vertical</item>
     </style>
 
     <!--水平线性布局宽是match_parent高是wrap_content-->
-    <style name="LinearLayoutHorizontalMW" parent="MWLayout">
-        <item name="android:orientation">horizontal</item>
-    </style>
-
     <style name="MWLayout.LinearLayoutHorizontal">
         <item name="android:orientation">horizontal</item>
     </style>
     <!--垂直线性布局宽是wrap_content高是match_parent-->
-    <style name="LinearLayoutVerticalMW" parent="MWLayout">
-        <item name="android:orientation">vertical</item>
-    </style>
 
     <style name="MWLayout.LinearLayoutVertical">
         <item name="android:orientation">vertical</item>
     </style>
     <!--水平线性布局宽是match_parent高是wrap_content-->
-    <style name="LinearLayoutHorizontalWM" parent="WMLayout">
-        <item name="android:orientation">horizontal</item>
-    </style>
-
     <style name="WMLayout.LinearLayoutHorizontal">
         <item name="android:orientation">horizontal</item>
     </style>
     <!--垂直线性布局宽是wrap_content高是match_parent-->
-    <style name="LinearLayoutVerticalWM" parent="WMLayout">
-        <item name="android:orientation">vertical</item>
-    </style>
-
     <style name="WMLayout.LinearLayoutVertical">
         <item name="android:orientation">vertical</item>
     </style>
     <!--水平线性布局宽是宽是match_parent高是0权重是1-->
-    <style name="LinearLayoutHorizontalMZW" parent="MZWLayout">
-        <item name="android:orientation">horizontal</item>
-    </style>
-
     <style name="MZWLayout.LinearLayoutHorizontal">
         <item name="android:orientation">horizontal</item>
     </style>
     <!--水平线性布局宽是0高是match_parent权重是1-->
-    <style name="LinearLayoutHorizontalZMW" parent="ZMWLayout">
-        <item name="android:orientation">horizontal</item>
-    </style>
-
     <style name="ZMWLayout.LinearLayoutHorizontal">
         <item name="android:orientation">horizontal</item>
     </style>
     <!--垂直线性布局宽是宽是match_parent高是0权重是1-->
-    <style name="LinearLayoutVerticalMZW" parent="MZWLayout">
-        <item name="android:orientation">vertical</item>
-    </style>
-
     <style name="MZWLayout.LinearLayoutVertical">
         <item name="android:orientation">vertical</item>
     </style>
     <!--垂直线性布局宽是0高是match_parent权重是1-->
-    <style name="LinearLayoutVerticalZMW" parent="ZMWLayout">
-        <item name="android:orientation">vertical</item>
-    </style>
-
     <style name="ZMWLayout.LinearLayoutVertical">
         <item name="android:orientation">vertical</item>
     </style>
     <!--水平线性布局宽是宽是wrap_content高是0权重是1-->
-    <style name="LinearLayoutHorizontalWZW" parent="WZWLayout">
-        <item name="android:orientation">horizontal</item>
-    </style>
-
     <style name="WZWLayout.LinearLayoutHorizontal">
         <item name="android:orientation">horizontal</item>
     </style>
     <!--水平线性布局宽是0高是wrap_content权重是1-->
-    <style name="LinearLayoutHorizontalZWW" parent="ZWWLayout">
-        <item name="android:orientation">horizontal</item>
-    </style>
-
     <style name="ZWWLayout.LinearLayoutHorizontal">
         <item name="android:orientation">horizontal</item>
     </style>
     <!--垂直线性布局宽是宽是wrap_content高是0权重是1-->
-    <style name="LinearLayoutVerticalWZW" parent="WZWLayout">
-        <item name="android:orientation">vertical</item>
-    </style>
-
     <style name="WZWLayout.LinearLayoutVertical">
         <item name="android:orientation">vertical</item>
     </style>
     <!--垂直线性布局宽是0高是wrap_content权重是1-->
-    <style name="LinearLayoutVerticalZWW" parent="ZWWLayout">
-        <item name="android:orientation">vertical</item>
-    </style>
-
     <style name="ZWWLayout.LinearLayoutVertical">
         <item name="android:orientation">vertical</item>
     </style>
