@@ -337,7 +337,7 @@
 
     <!--通用单行输入布局样式-->
     <style name="UiSimpleFormLayoutStyle.H">
-        <item name="android:background">@drawable/ui_bg_action_color_surface</item>
+        <item name="android:background">@drawable/ui_bg_color_surface</item>
         <item name="android:orientation">horizontal</item>
         <!--<item name="android:minHeight">40dp</item>-->
     </style>
