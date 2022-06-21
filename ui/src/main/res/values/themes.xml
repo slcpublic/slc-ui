@@ -360,12 +360,12 @@
 
     <!--自定义表单界面风格 start-->
     <!--简单单行表单输入布局样式-->
-    <style name="UiVariantsFormLayoutHStyle" parent="UiSimpleFormLayoutStyle.H">
+    <style name="UiVariantsFormLayoutStyle.H" parent="UiSimpleFormLayoutStyle.H">
         <!--<item name="android:paddingTop">@dimen/ui_style_dp_12</item>
         <item name="android:paddingBottom">@dimen/ui_style_dp_12</item>-->
     </style>
     <!--简单多表单行输入布局样式-->
-    <style name="UiVariantsFormLayoutVStyle" parent="UiSimpleFormLayoutStyle.V">
+    <style name="UiVariantsFormLayoutStyle.V" parent="UiSimpleFormLayoutStyle.V">
         <!--<item name="android:paddingTop">@dimen/ui_style_dp_12</item>
         <item name="android:paddingBottom">@dimen/ui_style_dp_12</item>-->
     </style>
