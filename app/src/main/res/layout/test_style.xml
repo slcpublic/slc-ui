@@ -83,7 +83,7 @@
         android:layout_height="wrap_content"
         android:text="@string/app_name" />
 
-    <LinearLayout style="@style/UiVariantsFormLayoutHStyle">
+    <LinearLayout style="@style/UiVariantsFormLayoutStyle.H">
 
         <TextView
             style="@style/UiVariantsFormLabelTextStyle.H"
@@ -95,7 +95,7 @@
     </LinearLayout>
 
     <LinearLayout
-        style="@style/UiVariantsFormLayoutHStyle"
+        style="@style/UiVariantsFormLayoutStyle.H"
         android:layout_marginTop="1dp">
 
         <TextView
@@ -114,7 +114,7 @@
 
     <LinearLayout
         android:id="@+id/ll_sex"
-        style="@style/UiVariantsFormLayoutHStyle"
+        style="@style/UiVariantsFormLayoutStyle.H"
         android:background="@drawable/ui_bg_action_color_secondary_24"
         android:layout_marginTop="1dp">
 
@@ -131,7 +131,7 @@
     </LinearLayout>
 
     <LinearLayout
-        style="@style/UiVariantsFormLayoutVStyle"
+        style="@style/UiVariantsFormLayoutStyle.V"
         android:layout_marginTop="1dp">
 
         <TextView
@@ -144,7 +144,7 @@
     </LinearLayout>
 
     <LinearLayout
-        style="@style/UiVariantsFormLayoutVStyle"
+        style="@style/UiVariantsFormLayoutStyle.V"
         android:layout_marginTop="1dp">
 
         <TextView
